@@ -1,62 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     font-family: "Poppins", sans-serif;
     width: 100%;
     justify-content: center;
 }
-.title{
+
+.title {
     font-family: "DM Sans";
     font-weight: 400;
     font-size: 55px;
 }
-.subtitle{
+
+.subtitle {
     font-size: 35px;
     font-weight: 700;
     position: relative;
     bottom: 25px;
 }
-.logo{
+
+.logo {
     width: 20rem;
 }
-.container-planos-prisma{
+
+.container-planos-prisma {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 70%;
 }
-.titulo-container{
+
+.titulo-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.cards-planos{
+
+.cards-planos {
     display: flex;
     gap: 30px;
     margin-top: 30px;
+    width:100%;
+    flex-wrap: wrap;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgba(56,182,255,255);
-    background-color: rgba(56,182,255,255);
+    border: 1px solid rgba(56, 182, 255, 255);
     padding: 35px;
     border-radius: 18px;
-    width: 27%;
+    width: 23%;
     transition: transform 0.3s ease;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.06);
     box-shadow: 0.5px 0.5px 20px rgba(0, 0, 0, 0.363);
 }
-.card-2{
+
+.card-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,11 +80,13 @@ body{
     transition: transform 0.3s ease;
     color: #ffffff;
 }
-.card-2:hover{
+
+.card-2:hover {
     transform: scale(1.06);
     box-shadow: 0.5px 0.5px 20px rgba(0, 0, 0, 0.363);
 }
-.card-3{
+
+.card-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,11 +97,13 @@ body{
     width: 26%;
     transition: transform 0.3s ease;
 }
-.card-3:hover{
+
+.card-3:hover {
     transform: scale(1.06);
     box-shadow: 0.5px 0.5px 20px rgba(0, 0, 0, 0.363);
 }
-.card-4{
+
+.card-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,31 +112,35 @@ body{
     padding: 20px;
     border-radius: 18px;
     width: 26%;
-    color:#ffffff;
+    color: #ffffff;
     transition: transform 0.3s ease;
 }
-.card-4:hover{
+
+.card-4:hover {
     transform: scale(1.06);
     box-shadow: 0.5px 0.5px 20px rgba(0, 0, 0, 0.363);
 }
-.button-vantagens{
+
+.button-vantagens {
     font-size: 15px;
     border-style: none;
     padding: 10px 18px 10px 18px;
-    background-color: aliceblue; 
+    background-color: aliceblue;
     border-radius: 16px;
     cursor: pointer;
 }
-.button-vantagens-3{
+
+.button-vantagens-3 {
     font-size: 15px;
     border-style: none;
     padding: 10px 18px 10px 18px;
-    background-color: #847cb4; 
+    background-color: #847cb4;
     border-radius: 16px;
     cursor: pointer;
     color: #ffffff;
 }
-.button-comece-ja{
+
+.button-comece-ja {
     font-size: 16px;
     border: 1px solid #000000;
     padding: 8px;
@@ -130,7 +150,8 @@ body{
     cursor: pointer;
     margin-top: 45px;
 }
-.button-comece-ja-2{
+
+.button-comece-ja-2 {
     font-size: 16px;
     border: 1px solid #ffffff;
     padding: 8px;
@@ -140,7 +161,8 @@ body{
     cursor: pointer;
     margin-top: 45px;
 }
-.button-comece-ja-3{
+
+.button-comece-ja-3 {
     font-size: 16px;
     border: 1px solid #000000;
     padding: 8px;
@@ -150,7 +172,8 @@ body{
     cursor: pointer;
     margin-top: 45px;
 }
-.button-comece-ja-4{
+
+.button-comece-ja-4 {
     font-size: 16px;
     border: 1px solid #ffffff;
     padding: 8px;
@@ -161,32 +184,43 @@ body{
     color: #ffffff;
     margin-top: 45px;
 }
-.check{
+
+.check {
     width: 30px;
     margin-right: 10px;
 }
-.vantagens{
+
+.vantagens {
     display: flex;
     align-items: center;
     margin-right: 20px;
     margin-top: 20px;
     font-size: 15px;
 }
-.vantagens h2{
+
+.vantagens h2 {
     font-weight: 200;
 }
-hr{
+
+hr {
     color: #ffffff;
 }
-.container-valor{
+
+.container-valor {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ffffff;
+
 }
-.mes{
+
+.mes {
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 23px;
+    font-size: 14px;
 }
-.valor{
+
+.valor {
     font-size: 60px;
 }
