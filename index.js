@@ -4,6 +4,7 @@ const mock = [
     {
         id: 1,
         nome: "Flex",
+        quantidadeDeCursos: 8,
         estilos:{
             cor:"rgba(56,182,255,255)",
             check:"/img/check-svgrepo-com (2).svg"
@@ -26,6 +27,7 @@ const mock = [
     {
         id: 2,
         nome: "Standard",
+        quantidadeDeCursos: 8,
         estilos:{
             cor:"#0d50ad",
             letras:"black",
@@ -48,6 +50,7 @@ const mock = [
     {
         id: 3,
         nome: "Pro",
+        quantidadeDeCursos: 8,
         estilos:{
             cor:"black",
             letras:"#ffffff",
@@ -71,6 +74,7 @@ const mock = [
     {
         id: 4,
         nome: "Ultimate",
+        quantidadeDeCursos: 8,
         estilos:{
             cor:"rgba(56,182,255,255)",
             letras:"black",
@@ -90,6 +94,7 @@ const mock = [
     {
         id: 5,
         nome: "pacote-5",
+        quantidadeDeCursos: 8,
         estilos:{
             cor:"rgba(56,182,255,255)",
             letras:"#ffffff",

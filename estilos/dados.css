@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+main{
+    width: 75%;
+    display: grid;
+    place-items: center;
+}
+form{
+    display: grid;
+    place-items: center;
+    width: 90%;
+    align-items: center;
+    gap: 20px;
+}
+label{
+    font-size: 22px;
+}
+.input-n{
+    width: 100%;
+    height: 65px;
+    background-color: #f4f4f4;
+    border-style: none;
+    border-radius: 12px;
+    border: 1px solid #d0d0d0;
+    padding-left: 20px;
+}
+.input-email{
+    width:100%;
+    height: 65px;
+    background-color: #f4f4f4;
+    border-style: none;
+    border-radius: 12px;
+    border: 1px solid #d0d0d0;
+    padding-left: 20px;
+}
+.seunome,.sobrenome,.email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.nome,.tel{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+.telefone-container{
+    width: 100%;
+}
+.input-ddd{
+    width: 7%;
+    height: 65px;
+    background-color: #f4f4f4;
+    border-style: none;
+    border-radius: 12px;
+    border: 1px solid #d0d0d0;
+    padding-left: 25px;
+}
+#input-telefone{
+    width: 50%;
+    height: 65px;
+    background-color: #f4f4f4;
+    border-style: none;
+    border-radius: 12px;
+    border: 1px solid #d0d0d0;
+    padding-left: 20px;
+}
+.button-avancar{
+    font-family: "Poppins", sans-serif;
+    height: 65px;
+    width: 100%;
+    max-width: 30%;
+    border-style: none;
+    background: none;
+    color: #2f84d5;
+    font-weight: 700;
+    border: 2px solid #2f84d5;
+    border-radius: 12px;
+}
