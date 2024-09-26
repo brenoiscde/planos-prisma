@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Progresso com Bolinhas</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+        }
+        .barra-progresso {
+            display: flex;
+            width: 100%;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+        .etapa {
+            flex: 1;
+            height: 20px;
+            background-color: #eee;
+            position: relative;
+            border-radius: 5px;
+        }
+        .progresso {
+            height: 100%;
+            background-color: #4caf50;
+            border-radius: 5px;
+            width: 0;
+            transition: width 0.5s ease;
+        }
+        .etapa-texto {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: -25px;
+        }
+        .bolinhas {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -10px; /* Ajuste a posição das bolinhas */
+        }
+        .bolinha {
+            width: 20px;
+            height: 20px;
+            background-color: #4caf50;
+            border-radius: 50%;
+            position: relative;
+        }
+        .bolinha.inativa {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="bolinhas">
+        <div class="bolinha" id="bolinha0"></div>
+        <div class="bolinha" id="bolinha1"></div>
+        <div class="bolinha" id="bolinha2"></div>
+    </div>
+    <div class="barra-progresso">
+        <div class="etapa">
+            <div class="progresso" id="progresso"></div>
+            <div class="etapa-texto">Dados</div>
+        </div>
+        <div class="etapa">
+            <div class="progresso" id="progresso1"></div>
+            <div class="etapa-texto">Pagamento</div>
+        </div>
+        <div class="etapa">
+            <div class="progresso" id="progresso2"></div>
+            <div class="etapa-texto">Finalizar</div>
+        </div>
+    </div>
+</div>
+<button onclick="aumentarProgresso()">Próximo</button>
+
+<script>
+    let etapaAtual = 0;
+
+    function aumentarProgresso() {
+        if (etapaAtual < 3) {
+            const progressoEtapa = document.getElementById(`progresso${etapaAtual}`);
+            progressoEtapa.style.width = '100%';
+            document.getElementById(`bolinha${etapaAtual}`).classList.remove('inativa');
+            etapaAtual++;
+            if (etapaAtual < 3) {
+                document.getElementById(`progresso${etapaAtual}`).style.width = '0%';
+            }
+        }
+    }
+
+    // Inicializa as bolinhas
+    document.querySelectorAll('.bolinha').forEach((b, index) => {
+        if (index > 0) b.classList.add('inativa');
+    });
+</script>
+
+</body>
+</html>

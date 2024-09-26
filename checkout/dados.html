@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="/checkout/dados.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais</title>
+</head>
+<body>
+    <div class="body">
+        <main>
+            <div class="barra">
+                <div id="progresso" class="progresso"></div>
+                <div class="staps">
+                    <span>Dados</span>
+                    <span>Pagamento</span>
+                    <span>Confirmação</span>
+                </div>
+            </div>
+            <form action="">
+                <hr>
+                <div class="nome">
+                    <div class="seunome">
+                        <label for="firstnmae">Seu nome</label>
+                        <input id="firstnmae" class="input-n" type="text" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="sobrenome">
+                        <label for="lastname">Seu Sobrenome</label>
+                        <input id="lastname" class="input-n" type="text" placeholder="Digite seu sobrenome" required>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="email">Seu email</label>
+                    <input id="email" type="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="telefone-container">
+                    <label for="">Telefone</label>
+                    <div class="tel">
+                        <input type="text" class="input-ddd" name="ddd" placeholder="DDD" maxlength="3" required>
+                        <input type="tel" id="input-telefone" name="telefone" placeholder="Número do telefone" maxlength="9" required>
+                    </div>
+                </div>
+                <button onclick="nextStep()" class="button-avancar">Avançar</button>
+            </form>
+        </main>
+        <aside>
+            <img class="imagem" src="/img/imagem-checkout/WhatsApp Image 2024-09-25 at 20.44.58 (1).jpeg" alt="image">
+        </aside>
+    </div>
+    <footer>
+    </footer>
+    <script src="/checkout/checkout.js"></script>
+</body>
+
+</html>

@@ -6,13 +6,49 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    font-family: "Poppins", sans-serif;
+   width: 100%;
+   height: 100vh;
 }
 main{
-    width: 75%;
+    width: 67%;
     display: grid;
     place-items: center;
+    margin-left: 20px;
+    height: 100vh;
+}
+footer{
+    width: 100%;
+    background-color: #2f84d5;
+    height: 2rem;
+    width: 100%;
+    position: absolute; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Coloca o rodapé na parte inferior */
+}
+.body{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
+}
+.imagem{
+    width: 65vh;
+    height: 100vh;
+}
+.barra{
+    background-color: #d4d4d4;
+    width: 80%;
+    height: 0.2rem;
+}.progresso{
+    height: 0.2rem;
+    background-color: #2f84d5;
+    border-radius: 5px;
+    width: 0;
+    transition: width 0.5s ease;
+}
+.staps{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    gap: 25rem;
 }
 form{
     display: grid;
@@ -21,8 +57,13 @@ form{
     align-items: center;
     gap: 20px;
 }
+hr{
+    width: 100%;
+}
 label{
     font-size: 22px;
+    font-weight: 500;
+    color: #0f0f0fa8;
 }
 .input-n{
     width: 100%;
@@ -32,8 +73,15 @@ label{
     border-radius: 12px;
     border: 1px solid #d0d0d0;
     padding-left: 20px;
+    font-size: 18px;
 }
-.input-email{
+.input-n:focus-visible{
+    outline: 1px solid #2f84d5;
+}
+.input-n:hover{
+    background-color: #eeeeee;
+}
+.email input{
     width:100%;
     height: 65px;
     background-color: #f4f4f4;
@@ -41,6 +89,13 @@ label{
     border-radius: 12px;
     border: 1px solid #d0d0d0;
     padding-left: 20px;
+    font-size: 18px;
+}
+.email input:focus-visible{
+    outline: 1px solid #2f84d5;
+}
+.input-email:hover{
+    background-color: #eeeeee;
 }
 .seunome,.sobrenome,.email{
     display: flex;
@@ -52,6 +107,9 @@ label{
     gap: 15px;
     width: 100%;
 }
+.nome{
+    margin-top: 30px;
+}
 .telefone-container{
     width: 100%;
 }
@@ -62,7 +120,11 @@ label{
     border-style: none;
     border-radius: 12px;
     border: 1px solid #d0d0d0;
-    padding-left: 25px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.input-ddd:hover{
+    background-color: #eeeeee;
 }
 #input-telefone{
     width: 50%;
@@ -72,6 +134,10 @@ label{
     border-radius: 12px;
     border: 1px solid #d0d0d0;
     padding-left: 20px;
+    font-size: 18px;
+}
+#input-telefone:hover{
+    background-color: #eeeeee;
 }
 .button-avancar{
     font-family: "Poppins", sans-serif;
@@ -84,4 +150,9 @@ label{
     font-weight: 700;
     border: 2px solid #2f84d5;
     border-radius: 12px;
+    cursor: pointer;
+}
+@media screen and (max-width:1330px) {
+   
+
 }
