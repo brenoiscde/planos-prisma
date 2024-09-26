@@ -101,6 +101,7 @@ label{
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 12px;
 }
 .nome,.tel{
     display: flex;
@@ -108,7 +109,7 @@ label{
     width: 100%;
 }
 .nome{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .telefone-container{
     width: 100%;
@@ -140,17 +141,26 @@ label{
     background-color: #eeeeee;
 }
 .button-avancar{
+    display: flex;
     font-family: "Poppins", sans-serif;
     height: 65px;
-    width: 100%;
-    max-width: 30%;
+    justify-self: start;
+    padding: 10px 10rem;
     border-style: none;
     background: none;
     color: #2f84d5;
     font-weight: 700;
+    font-size: 18px;
     border: 2px solid #2f84d5;
     border-radius: 12px;
     cursor: pointer;
+    margin-top: 15px;
+    align-items: center;
+    gap: 1rem;
+}
+.button-avancar:hover{
+    color: #4791d6bb;  
+    border: 2px solid #4791d6bb; 
 }
 @media screen and (max-width:1330px) {
    
